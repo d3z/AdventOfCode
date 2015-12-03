@@ -38,17 +38,12 @@ def with_robo_santa(directions):
     >>> with_robo_santa("^v^v^v^v^v")
     11
     """
-    split_directions = ["", ""]
-    for i in range(len(directions)):
-        split_directions[i % 2] += directions[i]
-    santa_directions, robo_directions = split_directions
-    santa_position = (0, 0)
-    robo_position = (0, 0)
+    positions = [(0, 0), (0, 0)]
     delivery_map = {(0, 0): 2}
-    for d in range(len(santa_directions)):
-        santa_position, delivery_map = take_turn(santa_position, delivery_map, santa_directions[d])
-        robo_position, delivery_map = take_turn(robo_position, delivery_map, robo_directions[d])
+    for x in range(len(directions)):
+        positions[x % 2], delivery_map = take_turn(positions[x % 2], delivery_map, directions[x])
     return len(delivery_map)
+
 
 if __name__ == "__main__":
     import doctest

@@ -23,3 +23,7 @@ Santa's current position and keeping a count of all the visits to each coordinat
 
 The instructions for the second part were a little fuzzy, but it comes down to a bit of a refactor of the first part
 to take turns over the same delivery map.
+
+## Day four
+Simple brute force check. There is, no doubt, a far more efficient way to calculate the hashes (in parallel for instance)
+but, it works :)

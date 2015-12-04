@@ -49,4 +49,4 @@ def with_robo_santa(directions):
 if __name__ == "__main__":
     import doctest
 
-    doctest.testmod("deliveries")
+    doctest.testmod()

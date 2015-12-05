@@ -2,11 +2,11 @@ import re
 
 
 def passes_repeated_double_rule(word):
-    return re.search("([a-z]{2}).*?\\1", word) is not None
+    return re.search(r"([a-z]{2}).*?\1", word) is not None
 
 
 def passes_split_double_rule(word):
-    return re.search("(.).{1}\\1", word) is not None
+    return re.search(r"(.).{1}\1", word) is not None
 
 
 def is_nice_word(word):

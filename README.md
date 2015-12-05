@@ -29,4 +29,6 @@ Simple brute force check. There is, no doubt, a far more efficient way to calcul
 but, it works :)
 
 ## Day five
-Pretty simple regexp puzzles. I'm no regexp master though so mine could probably be improved. Again, they worked :)
+Pretty simple regexp puzzles. I'm no regexp master though so mine could probably be improved. Again, they worked :) The 
+whole thing could very likely have been solved in a single regexp (one for each part of the puzzle at any rate) but I
+think keeping them separate makes it a little more readable.

@@ -27,3 +27,6 @@ to take turns over the same delivery map.
 ## Day four
 Simple brute force check. There is, no doubt, a far more efficient way to calculate the hashes (in parallel for instance)
 but, it works :)
+
+## Day five
+Pretty simple regexp puzzles. I'm no regexp master though so mine could probably be improved. Again, they worked :)

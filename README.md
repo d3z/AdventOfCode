@@ -32,3 +32,7 @@ but, it works :)
 Pretty simple regexp puzzles. I'm no regexp master though so mine could probably be improved. Again, they worked :) The 
 whole thing could very likely have been solved in a single regexp (one for each part of the puzzle at any rate) but I
 think keeping them separate makes it a little more readable.
+
+## Day six
+I'm not overly happy with my solution here. I know there must be a way to do this without necessarily saving the
+entire state, but I haven't had time today to work on it. I'll search for other solutions and copy ... ah, I mean, refactor.

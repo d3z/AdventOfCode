@@ -36,3 +36,14 @@ think keeping them separate makes it a little more readable.
 ## Day six
 I'm not overly happy with my solution here. I know there must be a way to do this without necessarily saving the
 entire state, but I haven't had time today to work on it. I'll search for other solutions and copy ... ah, I mean, refactor.
+
+## Day seven
+Grrr....
+
+This has to be the ugliest solution to this puzzle, but I have little shame in saying I don't care right now. It works and
+that'll have to do for now. Some day I will refactor that huge bloated mess of a function. Some day.
+
+I originally tried modelling the circuit but that is unnecessary. I then tried to do it recursively, but blew the stack. There's
+probably a way to avoid so much iteration, but like I said, it works.
+
+Note, I simply edited the input file for the second part of the puzzle.

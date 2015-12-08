@@ -1,5 +1,4 @@
 import re
-from collections import defaultdict
 
 instruction_re = re.compile(r"(.+) -> (.+)")
 
@@ -50,4 +49,4 @@ def calculate(instructions, signals):
 
 def calculate_signals(instructions):
     instructions = list(map(parse_instruction, instructions))
-    return calculate(instructions, defaultdict(int))
+    return calculate(instructions, {})

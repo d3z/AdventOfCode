@@ -26,8 +26,6 @@ for path in permutations(locations):
     journey_length = 0
     for i in range(len(path) - 1):
         journey_length += graph[path[i]][path[i+1]]
-    if journey_length < shortest:
-        shortest = journey_length
-    if journey_length > longest:
-        longest = journey_length
+    shortest = min(shortest, journey_length)
+    longest = max(longest, journey_length)
 print(shortest, longest)

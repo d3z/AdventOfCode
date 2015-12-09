@@ -1,5 +1,9 @@
 # AdventOfCode
-My solutions for the adventofcode.com puzzles
+My solutions for the adventofcode.com puzzles.
+
+I have, of course, been looking at other people's answers to the puzzles
+after I complete them. Some of the solutions I've committed here are far from optimal solutions when compared to others.
+I thought that I'd just keep my solutions though rather than 'fix' them based on what I read elsewhere.
 
 ## Day one
 
@@ -53,7 +57,7 @@ Note, I simply edited the input file for the second part of the puzzle.
 
 ## Day nine
 This sounded like the travelling salesman and we all know how much fun that is. You'll notice the code is getting uglier
-as the puzzles go on. I've given up all pretence that this is anything more that an exercise is getting the correct answer.
+as the puzzles go on. I've given up all pretence that this is anything more that an exercise in getting the correct answer.
 
 Again, a brute force solution to this seems like the only way to solve this one. First, we build a map of locations and
 the distances between them. Then using the handy permutations function, we basically get a list of all possible paths through

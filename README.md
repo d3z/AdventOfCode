@@ -47,3 +47,15 @@ I originally tried modelling the circuit but that is unnecessary. I then tried t
 probably a way to avoid so much iteration, but like I said, it works.
 
 Note, I simply edited the input file for the second part of the puzzle.
+
+## Day eight
+...
+
+## Day nine
+This sounded like the travelling salesman and we all know how much fun that is. You'll notice the code is getting uglier
+as the puzzles go on. I've given up all pretence that this is anything more that an exercise is getting the correct answer.
+
+Again, a brute force solution to this seems like the only way to solve this one. First, we build a map of locations and
+the distances between them. Then using the handy permutations function, we basically get a list of all possible paths through
+the locations. It's a simple matter then of iterating each path an calculating its total distance, keeping a track of the
+shortest and longest journeys so far.

@@ -63,3 +63,6 @@ Again, a brute force solution to this seems like the only way to solve this one.
 the distances between them. Then using the handy permutations function, we basically get a list of all possible paths through
 the locations. It's a simple matter then of iterating each path an calculating its total distance, keeping a track of the
 shortest and longest journeys so far.
+
+## Day ten
+Another dirty solution.

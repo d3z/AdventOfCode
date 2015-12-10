@@ -13,7 +13,7 @@ def parse(digits):
     >>> parse("111221")
     '312211'
     '''
-    return "".join(str(len(l)) + l[0] for l in [list(g) for k, g in groupby(digits)])
+    return "".join([str(len(list(g))) + str(k) for k, g in groupby(digits)])
 
 
 if __name__ == "__main__":

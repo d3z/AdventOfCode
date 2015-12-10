@@ -66,3 +66,6 @@ shortest and longest journeys so far.
 
 ## Day ten
 Another dirty solution.
+
+__Edit__: I read that replacing the call to the list function in the join with a normal comprehension on the
+ generator results in a quicker run time. Turns out that the runtime is about half that of the list() version.

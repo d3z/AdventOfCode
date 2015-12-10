@@ -1,3 +1,5 @@
+from itertools import groupby
+
 def parse(digits):
     '''
     >>> parse("1")
@@ -11,18 +13,7 @@ def parse(digits):
     >>> parse("111221")
     '312211'
     '''
-    current = digits[:1]
-    count = 1
-    output = ""
-    for digit in digits[1:]:
-        if digit == current:
-            count += 1
-        else:
-            output += str(count) + current
-            current = digit
-            count = 1
-    output += str(count) + current
-    return output
+    return "".join(str(len(l)) + l[0] for l in [list(g) for k, g in groupby(digits)])
 
 
 if __name__ == "__main__":

@@ -69,3 +69,13 @@ Another dirty solution.
 
 __Edit__: I read that replacing the call to the list function in the join with a normal comprehension on the
  generator results in a quicker run time. Turns out that the runtime is about half that of the list() version.
+ 
+## Day Thirteen
+I'm not keeping my notes up to date!! The past couple of days has just been an exercise in getting the solutions
+out as soon as possible.
+
+This one turns out to be a variation of the day nine travelling puzzle. My solution looks similar. Build a mapping
+between guests, iterate over all permutation of seating arrangements caclulating the happiness score for each and
+return the highest.
+
+The second part simply meant continuing in the score iteration if "me" was one of the guests.

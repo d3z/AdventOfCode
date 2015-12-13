@@ -1,9 +1,2 @@
-def count_chars(strings):
-    total = 0
-    for s in strings:
-        print(s.encode("unicode-escape"))
-        print(s)
-        total += (len(s.encode("unicode-escape")) - len(s))
-    return total
-
-print(count_chars([s.strip() for s in open("input.txt").readlines()]))
+print(sum(len(s[:-1]) - len(eval(s)) for s in open('input.txt')))
+print(sum(2+s.count('\\')+s.count('"') for s in open('input.txt')))

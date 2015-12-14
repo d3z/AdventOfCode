@@ -79,3 +79,6 @@ between guests, iterate over all permutation of seating arrangements caclulating
 return the highest.
 
 The second part simply meant continuing in the score iteration if "me" was one of the guests.
+
+## Day Fourteen
+Bad solution. Tried a kind of state machine. Not sure that worked out (certainly not pretty) but got the rigth answer.

@@ -82,3 +82,8 @@ The second part simply meant continuing in the score iteration if "me" was one o
 
 ## Day Fourteen
 Bad solution. Tried a kind of state machine. Not sure that worked out (certainly not pretty) but got the rigth answer.
+
+__Edit__: I've been looking at other people's solutions. I'm almost too embarrassed to continue. This puzzle has a much
+neater mathematical solution which I had no clue about.
+
+I guess there are programmers and then there are hackers !

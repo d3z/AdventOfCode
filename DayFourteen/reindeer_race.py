@@ -2,14 +2,14 @@ import re
 
 
 class Reindeer(object):
-    def __init__(self, name, speed, duration, rest):
+    def __init__(self, name, speed, run_duration, rest_duration):
         self.name = name
         self.speed = speed
-        self.duration = duration
-        self.rest = rest
+        self.run_duration = run_duration
+        self.rest_duration = rest_duration
         self.distance = 0
         self.running = True
-        self.current_state = self.duration
+        self.current_state = self.run_duration
         self.score = 0
 
     def tick(self):
@@ -18,10 +18,10 @@ class Reindeer(object):
         self.current_state -= 1
         if self.current_state == 0:
             if self.running:
-                self.current_state = self.rest
+                self.current_state = self.rest_duration
                 self.running = False
             else:
-                self.current_state = self.duration
+                self.current_state = self.run_duration
                 self.running = True
 
 reindeer_re = re.compile(r"^(.*?) can fly ([0-9]*) km/s for ([0-9]*) seconds, but then must rest for ([0-9]*) seconds.$")
